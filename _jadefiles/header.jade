@@ -1,0 +1,23 @@
+mixin nav-content()
+    ul
+        li: a(href="#about") About
+        li: a(href="#youtube") Youtube
+        li: a(href="#mentoring") Mentoring
+        li: a(href="#vine") Vine
+        li: a(href="#design") Design
+
+.mobile-nav
+    +nav-content()
+
+
+header
+    .header-position
+        h1.logo HT
+
+        nav.site-nav
+            +nav-content
+
+        a(href="mailto:huytran172@gmail.com").email-link +email me
+
+        .mobile-nav-toggle 
+            span
