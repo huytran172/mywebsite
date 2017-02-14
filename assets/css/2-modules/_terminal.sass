@@ -8,20 +8,39 @@
         display: flex
 
     &__main
-        background: rgba(0, 0, 0, 0.65)
+        background: $black__opaque
         height: 100%     
         p
             padding: 10px 0 0 20px;
             margin: 0
             font-size: 1.2em
-            font-family: 'Operator Mono', 'Fira Code'
+            font-family: 'Operator Mono', 'Fira Code', 'Consolas'
+
         &__command
             color: $light--green
+            margin: 0 auto
+
             i
                 color: white
 
         &__response
             color: white
+
+    &__continue-button
+        background: $white__opaque
+        width: 50px
+        height: 50px
+        display: inline
+        position: absolute
+        left: 60px
+        bottom: 40px
+        border-radius: 50%
+        i
+            font-size: 3em
+            position: relative
+            left: 9px
+        &:hover
+            background: white
 
 .mock-button
     width: 17px
@@ -40,4 +59,3 @@
 
     &--green
         background: $light--green
-
