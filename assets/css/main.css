@@ -402,225 +402,46 @@ template {
 [hidden] {
   display: none; }
 
-.gigantic, .huge, .large, .bigger, .big,
-h1, h2, h3, h4, h5, h6 {
-  color: #BD5248;
-  font-weight: bold; }
-
-.gigantic {
-  font-size: 110px;
-  line-height: 1.09;
-  letter-spacing: -2px; }
-
-.huge, h1 {
-  font-size: 68px;
-  line-height: 1.05;
-  letter-spacing: -1px; }
-
-.large, h2 {
-  font-size: 42px;
-  line-height: 1.14; }
-
-.bigger, h3 {
-  font-size: 26px;
-  line-height: 1.38; }
-
-.big, h4 {
-  font-size: 22px;
-  line-height: 1.38; }
-
-.small, small {
-  font-size: 10px;
-  line-height: 1.2; }
-
-p {
-  margin: 0 0 20px 0; }
-
-em {
-  font-style: italic; }
-
-strong {
-  font-weight: bold; }
-
-hr {
-  border: solid #ddd;
-  border-width: 1px 0 0;
-  clear: both;
-  margin: 10px 0 30px;
-  height: 0; }
-
-a {
-  color: #BD5248;
-  text-decoration: none;
-  outline: 0; }
-
-a:hover, a:focus {
-  color: #d89993; }
-
-::-moz-selection {
-  background: #FFF498; }
-
-::selection {
-  background: #FFF498; }
-
-::-moz-selection {
-  background: #FFF498; }
-
-img::-moz-selection {
-  background: transparent; }
-
-img::selection {
-  background: transparent; }
-
-img::-moz-selection {
-  background: transparent; }
-
-body {
-  -webkit-tap-highlight-color: #FFF498; }
-
-body {
-  background: #F6F6F8;
-  font-size: 14px;
-  line-height: 1.6;
-  font-family: 'Open Sans' sans-serif;
-  color: #2E2D33;
-  -webkit-font-smoothing: antialiased;
-  -webkit-text-size-adjust: 100%; }
-
-.home-wrap header {
-  width: 135px;
-  background: white;
-  padding: 30px 0; }
-  .home-wrap header .header-position {
-    position: fixed;
-    top: 30px;
-    left: 0;
-    bottom: 30px;
-    width: 135px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between; }
-  .home-wrap header .logo {
-    max-width: 135px;
-    size: contain;
-    height: 80px;
-    padding: 0;
-    margin: 0;
-    text-align: right;
-    padding: 0 20px 0 0; }
-  .home-wrap header .site-nav ul {
-    list-style: none;
-    margin: 20px 0;
-    padding: 0 20px 0 0;
-    text-align: right; }
-    .home-wrap header .site-nav ul li {
-      margin-bottom: 10px; }
-      .home-wrap header .site-nav ul li:last-child {
-        margin-bottom: 0; }
-  .home-wrap header .email-link {
-    display: block;
-    text-align: right;
-    padding-right: 20px; }
-  .home-wrap header .mobile-nav-toggle {
-    display: none;
-    width: 50px;
-    height: 50px;
-    margin-right: 20px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    cursor: pointer; }
-    .home-wrap header .mobile-nav-toggle span,
-    .home-wrap header .mobile-nav-toggle span:before,
-    .home-wrap header .mobile-nav-toggle span:after {
-      content: "";
-      display: block;
-      height: 2px;
-      width: 100%;
-      background: #333;
-      position: relative;
-      -webkit-transition: all 0.3s ease-in-out;
-              transition: all 0.3s ease-in-out; }
-    .home-wrap header .mobile-nav-toggle span:before {
-      top: 10px; }
-    .home-wrap header .mobile-nav-toggle span:after {
-      bottom: 12px; }
-    .home-wrap header .mobile-nav-toggle.is-open span {
-      background: transparent; }
-    .home-wrap header .mobile-nav-toggle.is-open span:before,
-    .home-wrap header .mobile-nav-toggle.is-open span:after {
-      -webkit-transform-origin: center;
-              transform-origin: center;
-      -webkit-transform: rotate(45deg);
-              transform: rotate(45deg);
-      top: 0; }
-    .home-wrap header .mobile-nav-toggle.is-open span:after {
-      -webkit-transform: rotate(-45deg);
-              transform: rotate(-45deg); }
-
-.home-wrap .mobile-nav {
-  display: none;
-  position: absolute;
-  width: 100%;
-  background: white;
-  padding: 30px 0 20px;
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
-  -webkit-transition: all 0.3s ease-in-out;
-          transition: all 0.3s ease-in-out; }
-  .home-wrap .mobile-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0; }
-  .home-wrap .mobile-nav li {
-    text-align: center;
-    margin-bottom: 10px; }
-
-@media (max-width: 775px) {
-  .home-wrap header {
-    width: auto;
-    padding: 0; }
-    .home-wrap header .header-position {
-      width: auto;
-      position: relative;
-      top: auto;
-      bottom: auto;
-      left: auto;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: row;
-              flex-direction: row;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center; }
-    .home-wrap header .site-nav,
-    .home-wrap header .email-link {
-      display: none; }
-    .home-wrap header .logo {
-      font-size: 50px;
-      padding-left: 30px;
-      padding-top: 30px; }
-    .home-wrap header .mobile-nav-toggle {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex; }
-  .home-wrap .mobile-nav.is-open {
-    display: block;
-    -webkit-transform: translateY(0);
-            transform: translateY(0); } }
-
-.home-wrap {
+/* Theme color */
+/* Terminal color */
+/** Font */
+.nav {
+  background-color: #E63461;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-height: 100vh; }
-  @media (max-width: 775px) {
-    .home-wrap {
-      display: block; } }
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: rows;
+          flex-direction: rows; }
+  .nav__logo {
+    color: white;
+    font-family: "Bauhaus 93";
+    letter-spacing: .6em;
+    border: 5px solid white;
+    margin: 25px 60px;
+    padding: 2px 0 0 6px; }
+    .nav__logo h1 {
+      margin: 0;
+      padding: 0; }
+  .nav__list {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: rows;
+            flex-direction: rows;
+    margin-left: auto; }
+    .nav__list__item {
+      margin: auto 80px auto 0; }
+      .nav__list__item a {
+        color: white;
+        text-decoration: none; }
+      .nav__list__item--last {
+        margin-right: 60px; }
+
+.terminal {
+  margin: 0;
+  background: red; }

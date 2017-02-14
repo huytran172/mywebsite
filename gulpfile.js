@@ -56,7 +56,7 @@ gulp.task('sass', function () {
  * 
  */
 gulp.task('jade', function () {
-    return gulp.src('_jadefiles/*.jade')
+    return gulp.src('_jadefiles/**/*.jade')
                .pipe(jade())
                .pipe(gulp.dest('_includes'));
 });
@@ -66,8 +66,9 @@ gulp.task('jade', function () {
  * Watch html/md files, run jekyll & reload BrowserSync
  */
 gulp.task('watch', function () {
-    gulp.watch('assets/css/**', ['sass']); gulp.watch(['*.html', '_layouts/*.html', '_includes/*.html'], ['jekyll-rebuild']);
-    gulp.watch('_jadefiles/*.jade', ['jade']);
+    gulp.watch('assets/css/**', ['sass']); 
+    gulp.watch(['*.html', '_layouts/*.html', '_includes/**/*.html'], ['jekyll-rebuild']);
+    gulp.watch('_jadefiles/**/*.jade', ['jade']);
 });
 
 /**
