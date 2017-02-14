@@ -1,5 +1,16 @@
 .terminal
     .terminal__nav
-        span.button--red
-        span.button--orange
-        span.button--green
+        div.mock-button.mock-button--red.mock-button--first
+        div.mock-button.mock-button--orange
+        div.mock-button.mock-button--green
+    
+    .terminal__main
+        p.terminal__main__command #[i.fa.fa-angle-right(aria-hidden="true")] whoami
+        p.terminal__main__response Hello, my name is Huy Tran :D
+        p.terminal__main__command #[i.fa.fa-angle-right(aria-hidden="true")] echo $occupation
+        p.terminal__main__response I am a junior majoring in Computer Science at Worcester Polytechnic Institute
+        p.terminal__main__command #[i.fa.fa-angle-right(aria-hidden="true")] echo $location
+        p.terminal__main__response Worcester, MA 01602, USA
+        p.terminal__main__command #[i.fa.fa-angle-right(aria-hidden="true")] cat more.info
+        p.terminal__main__response.terminal__main__response--last Press Enter to continue…
+
