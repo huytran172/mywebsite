@@ -2823,7 +2823,6 @@ template {
     background: white; }
 
 .vertical-nav {
-  width: 200px;
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2846,7 +2845,7 @@ template {
     margin-bottom: 50px;
     border: 1px solid black; }
     .vertical-nav__item--active {
-      background: #4990E2;
+      background: #50E3C2;
       border: none;
       width: 40px;
       height: 40px; }
@@ -2886,6 +2885,38 @@ template {
       line-height: 1.5em;
       font-size: 1.1em; }
 
+.project-content {
+  width: 90%;
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .project-content__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    margin: auto 0;
+    -webkit-overflow-scrolling: touch; }
+    .project-content__list::-webkit-scrollbar {
+      display: none; }
+    .project-content__list__item {
+      min-width: 27vw;
+      height: 70vh;
+      background: white;
+      margin-right: 50px;
+      border-radius: 10px; }
+      .project-content__list__item:first-child {
+        margin-left: 60px; }
+
 .main-header {
   background-color: #F5639B;
   background-image: -webkit-linear-gradient(top left, #F5639B, #E63461);
@@ -2900,3 +2931,11 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+
+.projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #F5639B;
+  background-image: -webkit-linear-gradient(top left, #F5639B, #E63461);
+  background-image: linear-gradient(to bottom right,#F5639B, #E63461); }
